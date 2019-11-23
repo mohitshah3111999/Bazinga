@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.70"
+    android:background="@drawable/burger1"
+    tools:context=".mycartActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="135dp"
+        android:text="Your Cart is Empty"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="234dp"
+        android:background="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971">
+
+        <Button
+            android:id="@+id/PlaceOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#0DB10D"
+            android:text="Place Order"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/FoodpriceTotal"
+            android:layout_width="98dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="Rs. 0.00"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/Foodprice"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Deliverycharge"
+            android:layout_width="178dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Delivery Charge :"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Foodprice" />
+
+        <TextView
+            android:id="@+id/DeliverychargeTotal"
+            android:layout_width="105dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="Rs. 0.00"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toEndOf="@+id/Deliverycharge"
+            app:layout_constraintTop_toBottomOf="@+id/FoodpriceTotal" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="106dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="18dp"
+            android:text="Total  :"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Deliverycharge"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/TotalPrice"
+            android:layout_width="103dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="18dp"
+            android:text="Rs. 0.00"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DeliverychargeTotal"
+            app:layout_constraintVertical_bias="0.074" />
+
+        <TextView
+            android:id="@+id/Foodprice"
+            android:layout_width="98dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:text="Food :"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/orders"
+        android:layout_width="0dp"
+        android:layout_height="340dp"
+        android:divider="#2FFF00"
+        android:dividerHeight="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

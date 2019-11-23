@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="130dp"
+        android:alpha="0.75"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/NameCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="TextView"
+            android:textColor="#4B99FF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/NumberCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TotalBillTextCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="Total Amount"
+            android:textColor="#2A00FF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="130dp"
+        android:alpha="0.75"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/HostelCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/RoomCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FF5E00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TotalBillAmountCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#EEFF00"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
