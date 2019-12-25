@@ -87,6 +87,7 @@ public class Main3Activity extends AppCompatActivity {
                 ImageView imageView = new ImageView(this);
                 imageView.setImageResource(R.drawable.cocacola);
                 String message = "\t\t\t\t\t\t\t\t\t\t\t\t\t\tOFFER\n\n\t\t\t\t\t\t\tGet a free 750ml\n\t\t\t\t\tcoca-cola on a minimum\n\t\t\t\t\t\t\torder of Rs.500 or a\n\t\t\t\t\t\t250ml coca-cola on a\n\t\t\t\tminimum order of Rs.250";
+
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
                         alert
                         .setMessage(message)
